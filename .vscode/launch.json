@@ -1,38 +1,11 @@
 {
     "configurations": [
+        
         {
             "type": "java",
-            "name": "AreaOfCircle",
+            "name": "Main",
             "request": "launch",
-            "mainClass": "AreaOfCircle",
-            "projectName": "My Java Life_6bf7c10d"
-        },
-        {
-            "type": "java",
-            "name": "Factorial",
-            "request": "launch",
-            "mainClass": "Factorial",
-            "projectName": "My Java Life_6bf7c10d"
-        },
-        {
-            "type": "java",
-            "name": "CelsiusToFahrenheit",
-            "request": "launch",
-            "mainClass": "CelsiusToFahrenheit",
-            "projectName": "My Java Life_6bf7c10d"
-        },
-        {
-            "type": "java",
-            "name": "AreaOfRectangle",
-            "request": "launch",
-            "mainClass": "AreaOfRectangle",
-            "projectName": "My Java Life_6bf7c10d"
-        },
-        {
-            "type": "java",
-            "name": "HelloWorld",
-            "request": "launch",
-            "mainClass": "HelloWorld",
+            "mainClass": "Main",
             "projectName": "My Java Life_6bf7c10d"
         },
         {
@@ -95,11 +68,5 @@
                 "hidden": true
             }
         },
-        {
-            "type": "msedge",
-            "name": "http://127.0.0.1:3000/HTML_CSS/Sem2_HTML_CSS/11.Website/log.html",
-            "request": "launch",
-            "url": "http://127.0.0.1:3000/HTML_CSS/Sem2_HTML_CSS/11.Website/log.html"
-        }
     ]
 }
