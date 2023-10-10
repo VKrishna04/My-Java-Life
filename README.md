@@ -8,49 +8,49 @@ This is the index for all the files in this directory. It is a work in progress.
 
 ```java
 public class MyClass {
-    // Fields (Instance Variables)
-    private int myField1;
-    private String myField2;
+  // Fields (Instance Variables)
+  private int myField1;
+  private String myField2;
 
-    // Constructors
-    public MyClass() {
-        // Default constructor
-        // Initialize fields or perform other setup
-    }
+  // Constructors
+  public MyClass() {
+  // Default constructor
+  // Initialize fields or perform other setup
+  }
 
-    public MyClass(int field1, String field2) {
-        // Parameterized constructor
-        // Initialize fields with provided values
-        this.myField1 = field1;
-        this.myField2 = field2;
-    }
+  public MyClass(int field1, String field2) {
+  // Parameterized constructor
+  // Initialize fields with provided values
+  this.myField1 = field1;
+  this.myField2 = field2;
+  }
 
-    // Methods
-    public void doSomething() {
-        // Method to perform some action
-    }
+  // Methods
+  public void doSomething() {
+  // Method to perform some action
+  }
 
-    public int calculateSomething(int input) {
-        // Method that returns a result based on input
-        return input * 2;
-    }
+  public int calculateSomething(int input) {
+  // Method that returns a result based on input
+  return input * 2;
+  }
 
-    // Getters and Setters (if needed)
-    public int getMyField1() {
-        return myField1;
-    }
+  // Getters and Setters (if needed)
+  public int getMyField1() {
+  return myField1;
+  }
 
-    public void setMyField1(int myField1) {
-        this.myField1 = myField1;
-    }
+  public void setMyField1(int myField1) {
+  this.myField1 = myField1;
+  }
 
-    public String getMyField2() {
-        return myField2;
-    }
+  public String getMyField2() {
+  return myField2;
+  }
 
-    public void setMyField2(String myField2) {
-        this.myField2 = myField2;
-    }
+  public void setMyField2(String myField2) {
+  this.myField2 = myField2;
+  }
 }
 ```
 
@@ -60,20 +60,20 @@ This class skeleton includes fields, constructors, methods, and getters/setters 
 
 ```java
 public class Main {
-    public static void main(String[] args) {
-        // Entry point of the program
-        
-        // Create objects of your classes
-        MyClass myObject1 = new MyClass();
-        MyClass myObject2 = new MyClass(42, "Hello");
+  public static void main(String[] args) {
+  // Entry point of the program
+  
+  // Create objects of your classes
+  MyClass myObject1 = new MyClass();
+  MyClass myObject2 = new MyClass(42, "Hello");
 
-        // Call methods on your objects
-        myObject1.doSomething();
-        int result = myObject2.calculateSomething(10);
+  // Call methods on your objects
+  myObject1.doSomething();
+  int result = myObject2.calculateSomething(10);
 
-        // Print output or perform other actions
-        System.out.println("Result: " + result);
-    }
+  // Print output or perform other actions
+  System.out.println("Result: " + result);
+  }
 }
 ```
 
@@ -89,9 +89,9 @@ Remember to replace `MyClass` with the name of your actual class, and customize 
 
 ```java
 public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
+  public static void main(String[] args) {
+  System.out.println("Hello, World!");
+  }
 }
 ```
 
@@ -125,12 +125,12 @@ Here are some other ways to take input in Java:
 import java.util.Scanner;
 
 public class InputExample {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!");
-    }
+  public static void main(String[] args) {
+  Scanner scanner = new Scanner(System.in);
+  System.out.print("Enter your name: ");
+  String name = scanner.nextLine();
+  System.out.println("Hello, " + name + "!");
+  }
 }
 ```
 
@@ -140,14 +140,14 @@ In this example, we use the `Scanner` class to read input from the user. We crea
 
 ```java
 public class InputExample {
-    public static void main(String[] args) {
-        if (args.length > 0) {
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-        } else {
-            System.out.println("Please provide a name as a command-line argument.");
-        }
-    }
+  public static void main(String[] args) {
+  if (args.length > 0) {
+  String name = args[0];
+  System.out.println("Hello, " + name + "!");
+  } else {
+  System.out.println("Please provide a name as a command-line argument.");
+  }
+  }
 }
 ```
 
@@ -159,10 +159,10 @@ In this example, we use command-line arguments to pass input to the program. We 
 import javax.swing.JOptionPane;
 
 public class InputExample {
-    public static void main(String[] args) {
-        String name = JOptionPane.showInputDialog("Enter your name:");
-        JOptionPane.showMessageDialog(null, "Hello, " + name + "!");
-    }
+  public static void main(String[] args) {
+  String name = JOptionPane.showInputDialog("Enter your name:");
+  JOptionPane.showMessageDialog(null, "Hello, " + name + "!");
+  }
 }
 ```
 
