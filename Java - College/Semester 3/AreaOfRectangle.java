@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 class AreaOfRectangle {
   public static void main(String args[]) {   
    
