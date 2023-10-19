@@ -13,13 +13,14 @@ class Circle {
   }
 
   void display(){
-  System.out.println("Area of the Circle"+area);
-  System.out.println("Circumference of the circle"+circumference);
+  System.out.println("Area of the Circle : "+area);
+  System.out.println("Circumference of the circle : "+circumference);
   }
+  
   public static void main(String [] args){
   Scanner s = new Scanner(System.in);
 
-  System.out.println("Please enter the radius of the circle :");
+  System.out.print("Please enter the radius of the circle : ");
   int radius = s.nextInt();
   s.nextLine();
   

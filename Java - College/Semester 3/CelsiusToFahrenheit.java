@@ -9,10 +9,10 @@ class CelsiusToFahrenheit {
 
 		//asking user to input the value of celsius
   System.out.println("Enter the temperature in celsius:");
-		
+		celsius = s.nextDouble();
   // formula for conversion
 		fahrenheit = (celsius * 1.8) + 32;
-		System.out.println(" value of temperature in fahrenheit:"+ fahrenheit);
+		System.out.println(" Value of temperature in fahrenheit:"+ fahrenheit);
 		s.close();
 	}
 }

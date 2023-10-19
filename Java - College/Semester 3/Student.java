@@ -1,6 +1,7 @@
 // Define a class "Student" with attributes such as name, roll number, and age. Create instances of the class and display their information.
 import java.util.Scanner;
 
+
 class Student {
   String name;
   int roll;
