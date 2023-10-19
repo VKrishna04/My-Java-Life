@@ -28,4 +28,5 @@ This is the index for all the files in this subdirectory. It is a work in progre
 
 11. [file](Employee.java) Write a Java program to create a class called Employee with methods called work() and getSalary(). Create a subclass called HRManager that overrides the work() method and adds a new method called addEmployee().
 
-#### Lab 6 - 17th of October 2023
+#### Lab 6 - 19th of October 2023
+12. [file](MultipleCatchBlocks.java) Write a Java program to demonstrate the use of multiple catch blocks.
