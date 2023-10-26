@@ -10,7 +10,7 @@ This is the index for all the files in this subdirectory. It is a work in progre
 #### Lab 2 - 14th of September 2023
 2. [file](AreaOfRectangle.java)  Calculate the area of a rectangle.
 3. [file](CelsiusToFahrenheit.java)  Celsius to Fahrenheit Converter.
-4. [file](Factorial.java)  Factorial Calculator.
+4. [file](FactorialCalculator.java)  Factorial Calculator.
 
 #### Lab 3 - 21st of September, 2023
 5. [file](Student.java)  Define a class "Student" with attributes such as name, roll number, and age. Create instances of the class and display their information.
@@ -19,9 +19,9 @@ This is the index for all the files in this subdirectory. It is a work in progre
 7. [file](BankAccount.java)  Design a class "BankAccount" with methods for deposit and withdrawal. Create objects and perform transactions. 
 
 #### Lab 4 - 28th of September 2023
-8. [file](Shapes.java) Implement a class hierarchy for shapes (e.g., Circle, Rectangle, Triangle) with a base class "Shape." Calculate areas and perimeters for each shape.
+8. [file](Calc.java) Implement a class hierarchy for shapes (e.g., Circle, Rectangle, Triangle) with a base class "Shape." Calculate areas and perimeters for each shape.
 
-9. [file](Vehicles.java) Create a base class "Vehicle" with subclasses "Car" and "Bicycle." Implement a method that calculates the speed of each vehicle.
+9. [file](Vehicle.java) Create a base class "Vehicle" with subclasses "Car" and "Bicycle." Implement a method that calculates the speed of each vehicle.
 
 #### Lab 5 - 12th of October 2023
 10. [file](Animal.java) Write a Java program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
@@ -30,3 +30,8 @@ This is the index for all the files in this subdirectory. It is a work in progre
 
 #### Lab 6 - 19th of October 2023
 12. [file](MultipleCatchBlocks.java) Write a Java program to demonstrate the use of multiple catch blocks.
+
+13. [file](ShapesAandP.java) Define an abstract class "Shape" with abstract methods for area and perimeter. Create subclasses (e.g., Circle, Rectangle) that implement these methods.
+
+14. [file](DrawingCandS.java) Create an interface "Drawable" with a method "draw." Implement this interface in classes representing different shapes (e.g., Circle, Square).
+

@@ -12,14 +12,14 @@ public class Animal {
     }
   }
 
-/*
-  public class Dog extends Animal {
-    @Override
-    void makeSound() {
-      system.out.print("Dog Barks")
+  /*
+    public class Dog extends Animal {
+      @Override
+      void makeSound() {
+        system.out.print("Dog Barks")
+      }
     }
-  }
-*/
+  */
 
   public static void main(String[] Args) {
     Animal animal = new Animal();

@@ -64,7 +64,7 @@ class Main {
   break;
   }
   }
-  System.out.println("Exiting the Bank..\nThank Your Please Visit us again..");
+  System.out.println("\nExiting the Bank..\nThank Your Please Visit us again..");
   while (s.hasNextLine()) {
   s.nextLine();
   }
