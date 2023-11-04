@@ -1,8 +1,5 @@
 // Implement a class hierarchy for shapes (e.g., Circle, Rectangle, Triangle) with a base class "Shape." Calculate areas and perimeters for each shape.
-public class Shapes {
-
-  public Shape() {
-  }
+public class Shapes1 {
 
   public double getPerimeter() {
   return 0.0;
@@ -12,7 +9,7 @@ public class Shapes {
   return 0.0;
   }
 }
-  class Circle extends Shapes {
+  class Circle extends Shapes1 {
     private double radius;
 
     public Circle (double radius) {

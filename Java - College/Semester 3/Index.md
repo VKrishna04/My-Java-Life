@@ -35,3 +35,52 @@ This is the index for all the files in this subdirectory. It is a work in progre
 
 14. [file](DrawingCandS.java) Create an interface "Drawable" with a method "draw." Implement this interface in classes representing different shapes (e.g., Circle, Square).
 
+-----------------------------------------------
+
+#### Midterm - 31st of October 2023 Practice Questions
+How does the concept of `generalisation` work for in class diagrams.
+
+Differentiate between `class level` and `instance level` attributes with examples.
+
+Describe the process of `identifying classes` and creating `CRC cards`.
+
+How is `UML` used to represent the structure of software system in object oriented software development.
+
+Explain the significance of encapsulation in object oriented programming.
+
+How do Object oriented languages defer from procedural languages.
+
+Compare and contrast method overloading and method overriding in java and provide examples for each(sample code).
+
+How does the inheritance is related to the concept of super class and subclass in java and give examples.
+
+What is the purpose of the keyword `super` in java and give examples.
+
+Describe the role of polymorphism in object oriented programming and give examples.
+
+Explain the concept of composition in class diagram and give examples.
+
+---- Long Questions ----
+
+Develop a use case diagram for a real world scenario such as an online shopping system.
+
+Design a class diagram for a banking application with a proper visibility of attributes and methods.
+
+Use object diagrams to represent the state and behaviour of objects in a car rental system.
+
+What are inner classes in java and how are they used in object oriented programming.
+
+Give an example where exception handling is necessary in java program.
+
+Name 3 commonly used wrapper classes in java and explain their roles.
+
+-----------
+java programs for Practice on Exceptions
+
+15. [file](ExceptionOdd.java)Write a java program that takes an integer that takes a parameter that throws an exception if the number is odd.
+
+16. [file](ExceptionDuplicates.java) Write a java program that reads a list of integers from the user and throws an exception if any of the numbers are duplicates.
+
+-------------------------------------
+
+#### 
