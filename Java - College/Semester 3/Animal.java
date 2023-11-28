@@ -12,7 +12,7 @@ public class Animal {
     }
   }
 
-  /*
+  /* // not in question
     public class Dog extends Animal {
       @Override
       void makeSound() {
