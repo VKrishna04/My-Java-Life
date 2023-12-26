@@ -65,8 +65,8 @@ public class Calc {
     System.out.println("Area of circle is: " + circle.area());
     System.out.println("Perimeter of circle is: " + circle.perimeter());
     Rectangle rectangle = new Rectangle(4, 6);
-    System.out.println("Area of rectanlge is: " + rectangle.area());
-    System.out.println("Perimeter of rectaangle is: " + rectangle.perimeter());
+    System.out.println("Area of rectangle is: " + rectangle.area());
+    System.out.println("Perimeter of rectangle is: " + rectangle.perimeter());
     Triangle triangle = new Triangle(3, 4, 5);
     System.out.println("Area of triangle is: " + triangle.area());
     System.out.println("Perimeter of triangle is: " + triangle.perimeter());

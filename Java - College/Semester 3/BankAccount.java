@@ -27,7 +27,7 @@ class BankAccount {
 
 }
 
-class Main {
+class Bank {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
 

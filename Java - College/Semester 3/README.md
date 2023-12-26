@@ -2,38 +2,107 @@
 
 This is the index for all the files in this subdirectory. It is a work in progress.
 
-### Java Basics
+### Unit 1: Introduction to Object-Oriented Programming
+#### Lab 1: Getting Started with Java - 14th of September 2023
+1. [HelloWorld](HelloWorld.java)  Hello World.
 
-#### Lab 1 - 14th of September 2023
-1. [file](HelloWorld.java)  Hello World.
+#### Lab 2: Basic Java Concepts - 14th of September 2023
+2. [AreaOfRectangle](AreaOfRectangle.java)  Calculate the area of a rectangle.
+3. [CelsiusToFahrenheit](CelsiusToFahrenheit.java)  Celsius to Fahrenheit Converter.
+4. [FactorialCalculator](FactorialCalculator.java)  Factorial Calculator.
 
-#### Lab 2 - 14th of September 2023
-2. [file](AreaOfRectangle.java)  Calculate the area of a rectangle.
-3. [file](CelsiusToFahrenheit.java)  Celsius to Fahrenheit Converter.
-4. [file](FactorialCalculator.java)  Factorial Calculator.
+#### Lab 3: Introduction to Classes and Objects - 21st of September, 2023
+5. [Student](Student.java)  Define a class "Student" with attributes such as name, roll number, and age. Create instances of the class and display their information.
+6. [Circle](Circle.java)  Create a class "Circle" with attributes for radius and methods to calculate its area and circumference. 
 
-#### Lab 3 - 21st of September, 2023
-5. [file](Student.java)  Define a class "Student" with attributes such as name, roll number, and age. Create instances of the class and display their information.
-6. [file](Circle.java)  Create a class "Circle" with attributes for radius and methods to calculate its area and circumference. 
+7. [BankAccount](BankAccount.java)  Design a class "BankAccount" with methods for deposit and withdrawal. Create objects and perform transactions. 
 
-7. [file](BankAccount.java)  Design a class "BankAccount" with methods for deposit and withdrawal. Create objects and perform transactions. 
 
-#### Lab 4 - 28th of September 2023
-8. [file](Calc.java) Implement a class hierarchy for shapes (e.g., Circle, Rectangle, Triangle) with a base class "Shape." Calculate areas and perimeters for each shape.
+### Unit 2: Intermediate Object-Oriented Concepts
+#### Lab 4: Inheritance and Polymorphism - 28th of September 2023
+8. [Calc](Calc.java) Implement a class hierarchy for shapes (e.g., Circle, Rectangle, Triangle) with a base class "Shape." Calculate areas and perimeters for each shape.
 
-9. [file](Vehicle.java) Create a base class "Vehicle" with subclasses "Car" and "Bicycle." Implement a method that calculates the speed of each vehicle.
+9. [Vehicle](Vehicle.java) Create a base class "Vehicle" with subclasses "Car" and "Bicycle." Implement a method that calculates the speed of each vehicle.
 
-#### Lab 5 - 12th of October 2023
-10. [file](Animal.java) Write a Java program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
+#### Lab 5: Exception Handling and File I/O - 12th of October 2023
+10. [ExceptionOdd](ExceptionOdd.java)Write a java program that takes an integer that takes a parameter that throws an exception if the number is odd.
 
-11. [file](Employee.java) Write a Java program to create a class called Employee with methods called work() and getSalary(). Create a subclass called HRManager that overrides the work() method and adds a new method called addEmployee().
+11. [ExceptionDuplicates](ExceptionDuplicates.java) Write a java program that reads a list of integers from the user and throws an exception if any of the numbers are duplicates.
 
-#### Lab 6 - 19th of October 2023
-12. [file](MultipleCatchBlocks.java) Write a Java program to demonstrate the use of multiple catch blocks.
+12. [SumFromFile](SumFromFile.java) Write a program that reads data from a text file and calculates the sum of numbers. Handle file-related exceptions.
 
-13. [file](ShapesAandP.java) Define an abstract class "Shape" with abstract methods for area and perimeter. Create subclasses (e.g., Circle, Rectangle) that implement these methods.
+13. [Person](Person.java) Implement a program that reads and writes objects to a file. Create a class "Person" and demonstrate object serialization.'
 
-14. [file](DrawingCandS.java) Create an interface "Drawable" with a method "draw." Implement this interface in classes representing different shapes (e.g., Circle, Square).
+#### Lab 6: Abstract Classes and Interfaces - 19th of October 2023
+
+14. [ShapesAandP](ShapesAandP.java) Define an abstract class "Shape" with abstract methods for area and perimeter. Create subclasses (e.g., Circle, Rectangle) that implement these methods.
+
+15. [DrawingCandS](DrawingCandS.java) Create an interface "Drawable" with a method "draw." Implement this interface in classes representing different shapes (e.g., Circle, Square).
+
+
+### Unit 3: Advanced Topics in Java
+#### Lab 7: Multithreading
+16. [Threading](Threading.java) Write a Java program that uses multiple threads to perform concurrent tasks. Implement thread synchronization mechanisms to avoid conflicts.
+
+17. [Racing](Racing.java) Create a program to simulate a race between multiple threads. Use synchronization to ensure fairness.
+
+#### Lab 8: Collections and Generics
+
+18. [InsertArrayList](InsertArrayList.java) Write a Java program to insert an element into the array list at the first position.
+
+19. [GetElementArrayList](GetElementArrayList.java) Write a Java program to retrieve an element (at a specified index) from a given array list.
+
+20. [RemoveElementArrayList](RemoveElementArrayList.java) Write a Java program to remove the third element from an array list.
+21. [SortArrayList](SortArrayList.java)Write a Java program to sort a given array list.
+22. [ReverseArrayList](ReverseArrayList.java)Write a Java program to reverse elements in an array list.
+23. [file]()Write a Java program that swaps two elements in an array list.
+7.Write a Java program to replace the second element of an ArrayList with the specified element.
+8.Write a Java program to test whether an array list is empty or not.
+
+
+18. [ArrayList](ArrayList.java) Implement a program to store and manage a list of student records using ArrayList. Use generics to ensure type safety.
+
+19. [Stack](Stack.java) Create a generic "Stack" class and demonstrate its usage with different data types.
+-------------------------------------
+### UnUsed programs
+1. [Animal](Animal.java) Write a Java program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
+
+2. [Employee](Employee.java) Write a Java program to create a class called Employee with methods called work() and getSalary(). Create a subclass called HRManager that overrides the work() method and adds a new method called addEmployee().
+
+### Exception Handling
+3. [ExceptionOdd](ExceptionOdd.java)Write a java program that takes an integer that takes a parameter that throws an exception if the number is odd.
+
+4. [ExceptionDuplicates](ExceptionDuplicates.java) Write a java program that reads a list of integers from the user and throws an exception if any of the numbers are duplicates.
+
+5. [MultipleCatchBlocks](MultipleCatchBlocks.java) Write a Java program to demonstrate the use of multiple catch blocks.
+
+
+### Java String - OOPs lab 16th Nov 2023
+6. [StringIntro](StringIntro.java) Introduction to string and different ways of declaring a string.
+  1. declaration by 
+    - String literal s1
+    - new keyword s2, s3
+  2. charAt() method which give the character at index.
+7. [StringErr](StringErr.java) Errors that can be generated when using strings and string methods in java.
+
+### Sample / Practice Questions for Lab test and End sem exam - OOPs 21st Nov 2023
+8. [OverLoading](OverLoading.java) Write code to demonstrate constructor and method overloading in any Language (c++/java).
+
+### basic exercises for preparation tests lab test
+
+9. [SearchArray](SearchArray.java) search an element from an array
+
+10. [MaxInArray](MaxInArray.java) finding the largest element in an array
+
+11. [SortArray](SortArray.java) sort an array in descending and ascending order
+
+12. [DuplicatesInArray](DuplicatesInArray.java) remove duplicates from an array
+
+13. [MatchArray](MatchArray.java) match two array
+
+14. [IntersectArray](IntersectArray.java) find common array elements
+
+
 
 -----------------------------------------------
 
@@ -95,46 +164,3 @@ This is the index for all the files in this subdirectory. It is a work in progre
 
 -----------
 ##### java programs for Practice on Exceptions
-
-15. [file](ExceptionOdd.java)Write a java program that takes an integer that takes a parameter that throws an exception if the number is odd.
-
-16. [file](ExceptionDuplicates.java) Write a java program that reads a list of integers from the user and throws an exception if any of the numbers are duplicates.
-
-13. [file](ShapesAandP.java) Define an abstract class "Shape" with abstract methods for area and perimeter. Create subclasses (e.g., Circle, Rectangle) that implement these methods.
-
-14. [file](DrawingCandS.java) Create an interface "Drawable" with a method "draw." Implement this interface in classes representing different shapes (e.g., Circle, Square).
--------------------------------------
-
-#### Java String - OOPs lab 16th Nov 2023
-15. [file](StringIntro.java) Introduction to string and different ways of declaring a string.
-  1. declaration by 
-    - String literal s1
-    - new keyword s2, s3
-  2. charAt() method which give the character at index.
-
-16. [file](StringErr.java) Errors that can be generated when using strings and string methods in java.
-
-#### Sample / Practice Questions for Lab test and End sem exam - OOPs 21st Nov 2023
-17. [file]() Write code to demonstrate constructor and method overloading in any Language (c++/java).
-
-
-```c++
-#include <iostream>
-
-int main(){
-  return 0;
-}
-```
-#### basic exercises for preparation tests lab test
-
-18. [file](SearchArray.java) search an element from an array
-
-19. [file](MaxInArray.java) finding the largest element in an array
-
-20. [file](SortArray.java) sort an array in descending and ascending order
-
-21. [file](DuplicatesInArray.java) remove duplicates from an array
-
-22. [file](MatchArray.java) match two array
-
-23. [file](IntersectArray.java) find common array elements
