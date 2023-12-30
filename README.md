@@ -219,15 +219,15 @@ These are some of the common ways to read input in Java. The choice of method de
 
 
 ## Ways to make objects
-In Java, which is an Object Oriented Programming (OOP) language, there are several ways to create an objectÂ¹Â². Here are some of them:
+In Java, which is an Object Oriented Programming (OOP) language, there are several ways to create an object¹². Here are some of them:
 
-1. **Using the `new` Operator**: This is the most common way to create an object in JavaÂ¹Â³. For example:
+1. **Using the `new` Operator**: This is the most common way to create an object in Java¹³. For example:
 ```java
 Rabbit rabbit = new Rabbit();
 ```
-2. **Using the `Class.newInstance()` Method**: This method creates a new instance of the class represented by this `Class` objectÂ¹. For example:
+2. **Using the `Class.newInstance()` Method**: This method creates a new instance of the class represented by this `Class` object¹. For example:
 ```java
 Rabbit rabbit = (Rabbit) Class.forName("com.baeldung.objectcreation.objects.Rabbit").newInstance();
 ```
-3. **Using the `clone()` Method**: The `clone()` method creates and returns a copy of the objectÂ¹.
+3. **Using the `clone()` Method**: The `clone()` method creates and returns a copy of the object¹.
 
