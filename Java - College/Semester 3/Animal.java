@@ -12,20 +12,20 @@ public class Animal {
     }
   }
 
-  /* // not in question
-    public class Dog extends Animal {
-      @Override
-      void makeSound() {
-        system.out.print("Dog Barks")
-      }
+  // not in question
+  public static class Dog extends Animal {
+    @Override
+    void makeSound() {
+      System.out.print("Dog Barks");
     }
-  */
+  }
 
   public static void main(String[] Args) {
     Animal animal = new Animal();
     Cat cat = animal.new Cat();
-    
+    Dog dog = new Dog();
     animal.makeSound();
     cat.makeSound();
+    dog.makeSound();
   }
 }

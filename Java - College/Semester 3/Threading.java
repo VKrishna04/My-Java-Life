@@ -1,24 +1,42 @@
 // Write a Java program that uses multiple threads to perform concurrent tasks. Implement thread synchronization mechanisms to avoid conflicts.
-public class Threading {
-  public static void main(String[] args) {
+class Counter {
+  private int count = 0;
 
-    try {
-      java.io.File file = new java.io.File("person.txt");
-      java.io.ObjectOutputStream output = new java.io.ObjectOutputStream(new java.io.FileOutputStream(file));
-      output.writeObject(new Person("Krishna", 19));
-      output.writeObject(new Person("Vamsi", 17));
-      output.writeObject(new Person("Surya", 18));
-      output.close();
-      java.io.ObjectInputStream input = new java.io.ObjectInputStream(new java.io.FileInputStream(file));
-      while (true) {
-        System.out.println(input.readObject());
+  public synchronized void increment() {
+    count++;
+  }
+
+  public int getCount() {
+    return count;
+  }
+}
+
+public class Threading {
+  public static void main(String[] args) throws InterruptedException {
+    Counter counter = new Counter();
+
+    // Create two threads that increment the counter
+    Thread thread1 = new Thread(() -> {
+      for (int i = 0; i < 10000; i++) {
+        counter.increment();
       }
-    } catch (java.io.EOFException ex) {
-      System.out.println("End of file reached.");
-    } catch (java.io.IOException ex) {
-      System.out.println("IO Exception.");
-    } catch (java.lang.ClassNotFoundException ex) {
-      System.out.println("Class not found.");
-    }
+    });
+
+    Thread thread2 = new Thread(() -> {
+      for (int i = 0; i < 10000; i++) {
+        counter.increment();
+      }
+    });
+
+    // Start the threads
+    thread1.start();
+    thread2.start();
+
+    // Wait for both threads to finish
+    thread1.join();
+    thread2.join();
+
+    // Print the final count
+    System.out.println("Final count: " + counter.getCount());
   }
 }

@@ -11,7 +11,7 @@ public class StringIntro {
     char[] ch = { 's', 't', 'r', 'i', 'n', 'g' };
     String s2 = new String(ch);
     String s3 = new String("hello");
-    char ch1 = s1.charAt(5);
+    char ch1 = s1.charAt(4);
     System.out.println(ch1);
     System.out.println(s1);
     System.out.println(s2);

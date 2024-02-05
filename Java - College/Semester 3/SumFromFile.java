@@ -11,7 +11,8 @@ public class SumFromFile {
       System.out.println("The sum of the numbers in the file is " + sum);
       input.close();
     } catch (java.io.FileNotFoundException ex) {
-      System.out.println("File not found..\nPlease Create a file named \"numbers.txt\" and put some numbers in it.");
+      System.out.println("File not found..\nPlease Create a file named \"numbers.txt\" and put some numbers in it. - "
+          + ex.getMessage());
     }
   }
 }

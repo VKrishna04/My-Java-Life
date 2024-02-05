@@ -50,12 +50,12 @@ This is the index for all the files in this subdirectory. It is a work in progre
 
 18. [InsertArrayList](InsertArrayList.java) Write a Java program to insert an element into the array list at the first position.
 
-19. [GetElementArrayList](GetElementArrayList.java) Write a Java program to retrieve an element (at a specified index) from a given array list.
+19. [Get Element Array List](GetElementArrayList.java) Write a Java program to retrieve an element (at a specified index) from a given array list.
 
 20. [RemoveElementArrayList](RemoveElementArrayList.java) Write a Java program to remove the third element from an array list.
 21. [SortArrayList](SortArrayList.java)Write a Java program to sort a given array list.
 22. [ReverseArrayList](ReverseArrayList.java)Write a Java program to reverse elements in an array list.
-23. [file]()Write a Java program that swaps two elements in an array list.
+23. [SwapTwoElementsArrayList](SwapTwoElementsArrayList.java)Write a Java program that swaps two elements in an array list.
 7.Write a Java program to replace the second element of an ArrayList with the specified element.
 8.Write a Java program to test whether an array list is empty or not.
 
@@ -103,10 +103,14 @@ This is the index for all the files in this subdirectory. It is a work in progre
 14. [IntersectArray](IntersectArray.java) find common array elements
 
 
+##### java programs for Practice on Exceptions
+
+24. [ExceptionHandling](ExceptionHandling.java) Write a Java program to demonstrate the use of try, catch, and finally blocks user defined.
 
 -----------------------------------------------
 
 #### Midterm - 31st of October 2023 Practice Questions
+##### ---- Short Questions ----
 ###### How does the concept of `generalisation` work for in class diagrams.
   Ans  : Generalization is the process of extracting shared characteristics from two or more classes, and combining them into a generalized superclass. Generalization is used to simplify complex class diagrams, it provides a higher-level view of the class structure than the detailed view obtained when classes are modeled individually.
 
@@ -140,6 +144,44 @@ This is the index for all the files in this subdirectory. It is a work in progre
 ###### What is the purpose of the keyword `super` in java and give examples.
   Ans - The purpose of the keyword super in java is to access the properties of the superclass from the subclass. The keyword super is used to call the constructor of the superclass from the constructor of the subclass. The keyword super is used to call the methods of the superclass from the methods of the subclass. The keyword super is used to call the variables of the superclass from the variables of the subclass.
 
+```java
+class Animal {
+  String name;
+
+  Animal(String name) {
+    this.name = name;
+  }
+
+  void eat() {
+    System.out.println(name + " is eating");
+  }
+}
+
+class Dog extends Animal {
+  Dog(String name) {
+    super(name); // Call the constructor of the superclass, Animal
+  }
+
+  void bark() {
+    System.out.println(name + " is barking");
+  }
+
+  @Override
+  void eat() {
+    super.eat(); // Call the eat method of the superclass, Animal
+    System.out.println(name + " likes bones");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Dog dog = new Dog("Rex");
+    dog.eat(); // Outputs "Rex is eating" and "Rex likes bones"
+    dog.bark(); // Outputs "Rex is barking"
+  }
+}
+```
+
 ###### Describe the role of polymorphism in object oriented programming and give examples.
   Ans - Polymorphism is the process of defining multiple methods with the same name but with different parameters. It is used to provide different implementations of the same method. It is used to provide different implementations of the same method in the subclass. It is used to provide different implementations of the same method in the superclass. It is used to provide different implementations of the same method in the subclass and superclass.
 
@@ -147,7 +189,7 @@ This is the index for all the files in this subdirectory. It is a work in progre
   Ans - Composition is the process of combining two or more classes into a single class. It is used to represent the relationship between two or more classes. It is used to represent the relationship between two or more classes in the class diagram. It is used to represent the relationship between two or more classes in the class diagram by using the keyword extends. It is used to represent the relationship between two or more classes in the class diagram by using the keyword implements. It is used to represent the relationship between two or more classes in the class diagram by using the keyword extends and implements.
 
 
----- Long Questions ----
+##### ---- Long Questions ----
 
 ###### Develop a use case diagram for a real world scenario such as an online shopping system.
 
@@ -161,6 +203,3 @@ This is the index for all the files in this subdirectory. It is a work in progre
 ###### Give an example where exception handling is necessary in java program.
 
 ###### Name 3 commonly used wrapper classes in java and explain their roles.
-
------------
-##### java programs for Practice on Exceptions
