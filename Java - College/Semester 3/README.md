@@ -1,4 +1,4 @@
-# My Java Life - College
+# My Java Life - College - Semester 3
 
 This is the index for all the files in this subdirectory. It is a work in progress.
 
