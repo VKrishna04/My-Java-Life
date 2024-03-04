@@ -27,7 +27,7 @@ class LinkedList {
     }
 }
 
-public class Main {
+public class InsertAtFrontLL {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.insertAtBeginning(10);

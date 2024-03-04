@@ -1,4 +1,4 @@
-import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 class Node {
     int data;
@@ -23,10 +23,10 @@ class LinkedList {
                 break;
             default:
                 if (position < 0) {
-                    throw new IllegalArgumentException("Invalid position: " + position);
-                } else {
-                    insertAtPosition(data, position);
+                    System.out.println("Invalid position: " + position);
+                    return;
                 }
+                insertAtPosition(data, position);
         }
     }
 
@@ -63,7 +63,8 @@ class LinkedList {
         }
 
         if (current == null) {
-            throw new NoSuchElementException("Position: " + position + " is after the end of the list");
+            System.out.println("Position: " + position + " is after the end of the list");
+            return;
         }
 
         Node newNode = new Node(data);
@@ -81,22 +82,51 @@ class LinkedList {
     }
 }
 
-public class Main {
+public class InsertSwitchLL {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         LinkedList list = new LinkedList();
-        list.insert(10, 0); // Insert at the beginning
-        list.insert(20, -1); // Insert at the end
-        try {
-            list.insert(30, 2); // Insert at position 2
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-        try {
-            list.insert(40, 5); // Insert at invalid position (beyond the end)
-        } catch (NoSuchElementException e) {
-            System.out.println(e.getMessage());
-        }
-        System.out.print("Linked list: ");
-        list.printList();
+        int choice, data, position;
+
+        do {
+            System.out.println("\nMenu:");
+            System.out.println("1. Insert at beginning");
+            System.out.println("2. Insert at end");
+            System.out.println("3. Insert at position");
+            System.out.println("4. Print list");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice: ");
+
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter data to insert at the beginning: ");
+                    data = scanner.nextInt();
+                    list.insert(data, 0);
+                    break;
+                case 2:
+                    System.out.print("Enter data to insert at the end: ");
+                    data = scanner.nextInt();
+                    list.insert(data, -1);
+                    break;
+                case 3:
+                    System.out.print("Enter data to insert: ");
+                    data = scanner.nextInt();
+                    System.out.print("Enter position (0 for beginning, -1 for end): ");
+                    position = scanner.nextInt();
+                    list.insert(data, position);
+                    break;
+                case 4:
+                    list.printList();
+                    break;
+                case 5:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while (choice != 5);
+
+        scanner.close();
     }
 }

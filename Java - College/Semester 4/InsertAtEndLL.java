@@ -34,7 +34,7 @@ class LinkedList {
     }
 }
 
-public class Main {
+public class InsertAtEndLL {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.insertAtEnd(10);
