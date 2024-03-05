@@ -17,6 +17,6 @@
 
 1. Insert an element into the array
 2. Remove an element into the array
-3. Sort the array elemnt into the array
+3. Sort the array element into the array
 4. Maximum of array
 5. Sum of array
