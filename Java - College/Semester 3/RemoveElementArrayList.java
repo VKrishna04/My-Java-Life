@@ -1,4 +1,4 @@
-
+node
 // Write a Java program to remove the third element from an array list.
 import java.util.ArrayList;
 

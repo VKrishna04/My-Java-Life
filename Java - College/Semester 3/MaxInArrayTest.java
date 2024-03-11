@@ -1,4 +1,4 @@
-import org.junit.*;
+nodeimport org.junit.*;
 import java.io.*;
 
 public class MaxInArrayTest {

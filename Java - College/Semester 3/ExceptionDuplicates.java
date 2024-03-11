@@ -1,4 +1,4 @@
-
+node
 // Write a java program that reads a list of integers from the user and throws an exception if any of the numbers are duplicates.
 import java.util.Scanner;
 import java.util.HashSet;

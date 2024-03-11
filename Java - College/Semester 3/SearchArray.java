@@ -1,4 +1,4 @@
-// search an element from an array
+node// search an element from an array
 
 import java.util.Scanner;
 

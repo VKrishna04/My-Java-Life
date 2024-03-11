@@ -27,13 +27,13 @@
 2. [Union](Union.java) - Implementing Union(from C Language) in Java. 
 
 ### Lab 3
-1. [Array Element Insertion](ArrayManipulation.java)
-2. [ArrayList Element Insertion](ArrayListManipulation.java)
+1. [Array Node Insertion](ArrayManipulation.java)
+2. [ArrayList Node Insertion](ArrayListManipulation.java)
 
 
-1. Insert an element into the array
-2. Remove an element into the array
-3. Sort the array element into the array
+1. Insert an node into the array
+2. Remove an node into the array
+3. Sort the array node into the array
 4. Maximum of array
 5. Sum of array
 
@@ -62,7 +62,7 @@ Linked Lists
 
 ### Lab II 
 12th of February, 2024 **Real world scenarios involving array.**
-1. #### [Average Temprature Of Week](AvgTempratureOfWeek.c)
+1. #### [Average Temprature Of Week](AvgTempratureOfWeek.c) Average Temprature throughout the Week
 - In this program, an array named temperatures is used to store the temperatures for each day of the week. 
 - The program prompts the user to input temperatures for each day, then displays the recorded temperatures and calculates the average temperature for the week.
 
@@ -71,23 +71,23 @@ Linked Lists
 - The main function initializes two 3x3 matrices, performs matrix multiplication, and then displays the original matrices and the result.
 
 ### Lab III
-4th of March, 2024 **Linked Lists**
-1. [Insert Element from Front](InsertAtFrontLL.java) Insert from front
+4th of March, 2024 **Single Linked Lists Insert Nodes at Various Positions**
+1. #### [Insert Node from Front](InsertAtFrontLL.java) Insert from front
 - **Explanation:**
 - The Node class represents a node in the linked list, containing data and a reference to the next node.
 - The LinkedList class has a head pointer that points to the first node in the list.
 - The insertAtBeginning method creates a new node with the provided data, sets its next pointer to the current head, and then updates the head pointer to point to the newly created node.
 - The printList method iterates through the list starting from the head and prints the data of each node.
-- In the main method, a linked list is created, and elements are inserted at the beginning using insertAtBeginning. Finally, the list is printed.
+- In the main method, a linked list is created, and nodes are inserted at the beginning using insertAtBeginning. Finally, the list is printed.
 
-2. [Insert Element from End](InsertAtEndLL.java)Insert from end
+2. #### [Insert Node from End](InsertAtEndLL.java) Insert from end
 - **Explanation:**
 - The code structure is similar to the previous example, with the insertAtEnd method handling the insertion logic.
 - The insertAtEnd method first checks if the list is empty. If so, it sets the head to the new node.
 - Otherwise, it iterates through the list to find the last node using a last pointer.
 - Once the last node is found, its next pointer is set to the new node, effectively adding it to the end of the list.
 
-3. [Insert Element from any Position](InsertAtPositionLL.java)Insert from any position till here without inbuilt functions
+3. #### [Insert Node from any Position](InsertAtPositionLL.java) Insert from any position till here without inbuilt functions
 - **Explanation:**
 - The code structure is similar to the previous examples, with the insertAtPosition method handling the insertion logic at any given position.
 - The insertAtPosition method takes the data to be inserted and the desired position as arguments.
@@ -97,7 +97,7 @@ Linked Lists
 - If the position is beyond the list's length, it indicates an invalid position, and an error message is printed.
 - Once the correct node is found, the new node's next pointer is set to the current node's next, and the current node's next pointer is set to the new node, effectively inserting it at the desired position.
 
-4. [Insert Element from Switch Case with built-in Functions](InsertSwitchLL.java)Apply Switch case and create a java program for all types of insert operations on single linked list with built-in functions
+4. #### [Insert Node from Switch Case with built-in Functions](InsertSwitchLL.java) Apply Switch case and create a java program for all types of insert operations on single linked list with built-in functions
 - **Explanation:**
 - The insert method takes the data and position as arguments.
 - It uses a switch statement to handle different insertion scenarios:
@@ -106,4 +106,41 @@ Linked Lists
 - Default: Checks for invalid positions (negative except -1) and throws an IllegalArgumentException. If the position is valid (non-negative), it calls insertAtPosition.
 - The private helper methods (insertAtBeginning, insertAtEnd, and insertAtPosition) implement the logic for inserting at specific positions, similar to the previous examples.
 - The printList method remains the same.
-- In the main method, various insertion scenarios are tested, including valid and invalid positions. The program handles and prints error messages for invalid positions using exceptions (IllegalArgumentException and NoSuchElementException).
+- In the main method, various insertion scenarios are tested, including valid and invalid positions. The program handles and prints error messages for invalid positions using exceptions (IllegalArgumentException and NoSuchNodeException).
+
+11th of March, 2024 **Single Linked Lists Delete Nodes at Various Positions**
+5. #### [Delete Node from Front](DeleteAtFrontLL.java) Delete from front
+- **Explanation:**
+- The Node class represents a node in the linked list, containing data and a reference to the next node.
+- The LinkedList class has a head pointer that points to the first node in the list.
+- The deleteAtBeginning method creates a new node with the provided data, sets its next pointer to the current head, and then updates the head pointer to point to the newly created node.
+- The printList method iterates through the list starting from the head and prints the data of each node.
+- In the main method, a linked list is created, and nodes are deleted at the beginning using deleteAtBeginning. Finally, the list is printed.
+
+6. #### [Delete Node from End](DeleteAtEndLL.java) Delete from end
+- **Explanation:**
+- The code structure is similar to the previous example, with the deleteAtEnd method handling the deleteion logic.
+- The deleteAtEnd method first checks if the list is empty. If so, it sets the head to the new node.
+- Otherwise, it iterates through the list to find the last node using a last pointer.
+- Once the last node is found, its next pointer is set to the new node, effectively adding it to the end of the list.
+
+7. #### [Delete Node from any Position](DeleteAtPositionLL.java) Delete from any position till here without inbuilt functions
+- **Explanation:**
+- The code structure is similar to the previous examples, with the deleteAtPosition method handling the deleteion logic at any given position.
+- The deleteAtPosition method takes the data to be deleted and the desired position as arguments.
+- It first checks for an invalid position (negative index).
+- If the position is 0, it deletes the new node at the beginning, similar to deleteAtBeginning.
+- Otherwise, it iterates through the list using a current node and a counter (count) to find the node at the position before the desired deleteion point.
+- If the position is beyond the list's length, it indicates an invalid position, and an error message is printed.
+- Once the correct node is found, the new node's next pointer is set to the current node's next, and the current node's next pointer is set to the new node, effectively deleteing it at the desired position.
+
+8. #### [Delete Node from Switch Case with built-in Functions](DeleteSwitchLL.java) Apply Switch case and create a java program for all types of delete operations on single linked list with built-in functions
+- **Explanation:**
+- The delete method takes the data and position as arguments.
+- It uses a switch statement to handle different deleteion scenarios:
+- Case 0: Deletes at the beginning using deleteAtBeginning.
+- Case -1: Deletes at the end using deleteAtEnd.
+- Default: Checks for invalid positions (negative except -1) and throws an IllegalArgumentException. If the position is valid (non-negative), it calls deleteAtPosition.
+- The private helper methods (deleteAtBeginning, deleteAtEnd, and deleteAtPosition) implement the logic for deleteing at specific positions, similar to the previous examples.
+- The printList method remains the same.
+- In the main method, various deleteion scenarios are tested, including valid and invalid positions. The program handles and prints error messages for invalid positions using exceptions (IllegalArgumentException and NoSuchNodeException).

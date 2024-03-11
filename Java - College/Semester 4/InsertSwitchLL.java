@@ -10,7 +10,7 @@ class Node {
     }
 }
 
-class LinkedList {
+class LinkedList_InsertSwitchLL {
     Node head;
 
     public void insert(int data, int position) {
@@ -85,7 +85,7 @@ class LinkedList {
 public class InsertSwitchLL {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LinkedList list = new LinkedList();
+        LinkedList_InsertSwitchLL list = new LinkedList_InsertSwitchLL();
         int choice, data, position;
 
         do {
@@ -120,6 +120,8 @@ public class InsertSwitchLL {
                     list.printList();
                     break;
                 case 5:
+                    System.out.print("Final Linked List: ");
+                    list.printList();
                     System.out.println("Exiting...");
                     break;
                 default:

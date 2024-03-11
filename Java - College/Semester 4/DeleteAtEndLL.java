@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-class LinkedList_InsertAtEndLL {
+class LinkedList_DeleteAtEndLL {
     Node head;
 
     public void insertAtEnd(int data) {
@@ -32,15 +32,34 @@ class LinkedList_InsertAtEndLL {
         }
         System.out.println();
     }
+
+    public void deleteAtEnd() {
+        if (head == null) {
+            System.out.println("The Linked List is empty Please create a new node before performing Delete operation!!!");
+            return;
+        }
+        Node last = head;
+        Node lastFinal = head;
+        lastFinal = lastFinal.next;
+
+        while(lastFinal.next != null) {
+            lastFinal = lastFinal.next;
+            last = last.next;
+        }
+        last.next = null;
+    }
 }
 
-public class InsertAtEndLL {
+public class DeleteAtEndLL {
     public static void main(String[] args) {
-        LinkedList_InsertAtEndLL list = new LinkedList_InsertAtEndLL();
+        LinkedList_DeleteAtEndLL list = new LinkedList_DeleteAtEndLL();
         list.insertAtEnd(10);
         list.insertAtEnd(20);
         list.insertAtEnd(30);
         System.out.print("Linked list: ");
+        list.printList();
+        System.out.print("Linked list After removing the Element at the End: ");
+        list.deleteAtEnd();
         list.printList();
     }
 }
