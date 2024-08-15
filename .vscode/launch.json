@@ -1,20 +1,6 @@
 {
   "configurations": [
     {
-      "type": "java",
-      "name": "FindNumbersWithEvenNumberOfDigits",
-      "request": "launch",
-      "mainClass": "LeetCode.FindNumbersWithEvenNumberOfDigits",
-      "projectName": "My Java Life_6bf7c10d"
-    },
-    {
-      "type": "java",
-      "name": "Main",
-      "request": "launch",
-      "mainClass": "Main",
-      "projectName": "My Java Life_6bf7c10d"
-    },
-    {
       "name": "C/C++: gcc.exe build and debug active file",
       "type": "cppdbg",
       "request": "launch",

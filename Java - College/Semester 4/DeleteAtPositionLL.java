@@ -58,14 +58,14 @@ class LinkedList_DeleteAtPosition {
             return;
         }
         Node current = head;
-        for(int i = 0; i < position-2; i++){
+        for (int i = 0; i < position - 2; i++) {
             current = current.next;
         }
         current.next = current.next.next;
     }
 }
 
-public class DeleteAtPosition {
+public class DeleteAtPositionLL {
     public static void main(String[] args) {
         LinkedList_DeleteAtPosition list = new LinkedList_DeleteAtPosition();
         list.insertAtPosition(10, 0); // Insert at the beginning

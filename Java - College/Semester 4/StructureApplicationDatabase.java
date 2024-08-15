@@ -8,7 +8,7 @@ class Student {
 }
 
 // Studentinfo class
-public class Structure {
+public class StructureApplicationDatabase {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,20 +37,17 @@ public class Structure {
         }
         scanner.close();
 
-        
         // Calculate the average marks for the class
         float totalMarks = 0;
         for (int i = 0; i < numStudents; ++i) {
             totalMarks += students[i].marks;
         }
-        
+
         float averageMarks = totalMarks / numStudents;
-        
 
         // Display the average marks for the class
         System.out.println("\nAverage marks for the class: " + String.format("%.2f", averageMarks));
-        
-        
+
         // Display information for each student
         System.out.println("\nStudent details:");
         for (int i = 0; i < numStudents; ++i) {

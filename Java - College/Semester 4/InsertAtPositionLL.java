@@ -53,7 +53,7 @@ class LinkedList_InsertAtPosition {
     }
 }
 
-public class InsertAtPosition {
+public class InsertAtPositionLL {
     public static void main(String[] args) {
         LinkedList_InsertAtPosition list = new LinkedList_InsertAtPosition();
         list.insertAtPosition(10, 0); // Insert at the beginning

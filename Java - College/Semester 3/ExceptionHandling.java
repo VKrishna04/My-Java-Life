@@ -5,7 +5,7 @@ class MyException extends Exception {
     }
 }
 
-public class Main {
+public class ExceptionHandling {
     public static void main(String[] args) {
         try {
             // Throw an instance of our user-defined exception

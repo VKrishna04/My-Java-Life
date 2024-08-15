@@ -26,38 +26,39 @@ class LinkedList_DeleteSwitchLL {
         last.next = newNode;
     }
 
-    public void deleteAtBegining() {
+    public void deleteAtBeginning() {
         head = head.next;
     }
 
     public void deleteAtEnd() {
         if (head == null) {
-            System.out.println("The Linked List is empty Please create a new node before performing Delete operation!!!");
+            System.out
+                    .println("The Linked List is empty Please create a new node before performing Delete operation!!!");
             return;
         }
         Node last = head;
         Node lastFinal = head;
         lastFinal = lastFinal.next;
 
-        while(lastFinal.next != null) {
+        while (lastFinal.next != null) {
             lastFinal = lastFinal.next;
             last = last.next;
         }
         last.next = null;
     }
-    
+
     public void deleteAtPosition(int position) {
         if (position < 0) {
             System.out.println("Invalid position");
             return;
         }
         if (position == 0) {
-            deleteAtBegining();
+            deleteAtBeginning();
             return;
         }
 
         Node current = head;
-        for(int i = 0; i < position-2; i++){
+        for (int i = 0; i < position - 2; i++) {
             current = current.next;
         }
         current.next = current.next.next;
@@ -80,13 +81,13 @@ public class DeleteSwitchLL {
 
         list.insertAtEnd(10);
         list.insertAtEnd(20);
-        list.insertAtEnd(30);        
+        list.insertAtEnd(30);
         list.insertAtEnd(40);
         list.insertAtEnd(50);
-        list.insertAtEnd(60);        
+        list.insertAtEnd(60);
         list.insertAtEnd(70);
         list.insertAtEnd(80);
-        list.insertAtEnd(90);        
+        list.insertAtEnd(90);
         System.out.print("\nCurrent Linked List: ");
         list.printList();
 
@@ -106,7 +107,7 @@ public class DeleteSwitchLL {
             switch (choice) {
                 case 1:
                     System.out.print("Current Linked List after Deleting Node at Beginning: ");
-                    list.deleteAtBegining();
+                    list.deleteAtBeginning();
                     list.printList();
                     break;
                 case 2:
@@ -119,12 +120,12 @@ public class DeleteSwitchLL {
                     System.out.print("Enter position to delete (0 for beginning, -1 for end): ");
                     position = scanner.nextInt();
                     list.deleteAtPosition(position);
-                    System.out.print("Current Linked List after Deleting Node at Position "+position+": ");
+                    System.out.print("Current Linked List after Deleting Node at Position " + position + ": ");
                     list.printList();
                     break;
                 case 4:
-                System.out.print("Current Linked List is: ");
-                list.printList();
+                    System.out.print("Current Linked List is: ");
+                    list.printList();
                     break;
                 case 5:
                     System.out.print("Final Linked List: ");
